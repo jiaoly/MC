@@ -17,6 +17,9 @@ Syntax highlighted code block
 
 - Bulleted
 - List
+- 
+This sentence uses $ delimiters to show math inline: $\sqrt{3x-1}+(1+x)^2$
+
 
 1. Numbered
 2. List
