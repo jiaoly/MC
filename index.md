@@ -3,7 +3,8 @@
 You can use the [editor on GitHub](https://github.com/jiaoly/jiao.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
+This sentence uses $ delimiters to show math inline: $\sqrt{3x-1}+(1+x)^2$
+$$\sqrt{3x-1}+(1+x)^2$$
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
