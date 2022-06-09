@@ -9,10 +9,13 @@
         });
     </script>
 </head>
+ 
 
-$ e = m c^2 $ 
+# 现代控制理论摘要
 
-## Welcome to GitHub Pages
+### 研究对象
+
+有限维线性时不变动态系统（a finite dimensional linear time invariant (FDLTI) dynamical system），具有齐次性、线性和时不变特性
 
 You can use the [editor on GitHub](https://github.com/jiaoly/jiao.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
