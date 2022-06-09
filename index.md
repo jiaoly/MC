@@ -23,7 +23,21 @@ $ \dot{x}  = Ax+Bu $
 
 $ y  =  Cx+Du $
 
-$ \begin{eqnarray} \dot{x} & = & Ax+Bu \\ y & = & Cx+Du \end{eqnarray} $
+其中$x(t_0) = x_0 $为状态变量，$ u $表示系统输入， $y$表示系统输出。
+
+对应经典控制理论，两边取Laplace变换:
+
+$ sX(s) = A X(s) + B U(s)$
+
+$ Y(s) = C X(s) + D U(s)$
+
+传递函数 $ G(s) = \frac{Y(s)}{U(s)} = (C(sI-A)^{-1}+D)$，$(sI-A)^{-1}$ 
+## 五类系统性分析
+
+### 稳定性
+
+对于传递函数$G(s)=C(sI-A)^{-1}+D$，$(sI-A)^{-1} = $，其分母对应转移矩阵$A $的特征值，即传递函数极点
+
 
 
 You can use the [editor on GitHub](https://github.com/jiaoly/jiao.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
