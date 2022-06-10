@@ -1,2 +1,1 @@
-# jiao.github.io
-personal practice
+# 现代控制理论摘要
