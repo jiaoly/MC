@@ -31,12 +31,23 @@ $ sX(s) = A X(s) + B U(s)$
 
 $ Y(s) = C X(s) + D U(s)$
 
-传递函数 $ G(s) = \frac{Y(s)}{U(s)} = (C(sI-A)^{-1}+D)$，$(sI-A)^{-1}$ 
+传递函数 $ G(s) = \frac{Y(s)}{U(s)} = (C(sI-A)^{-1}+D)$
+
 ## 五类系统性分析
 
-### 稳定性
+### 稳定性 Stability
 
-对于传递函数$G(s)=C(sI-A)^{-1}+D$，$(sI-A)^{-1} = $，其分母对应转移矩阵$A $的特征值，即传递函数极点
+对于传递函数$G(s)=C(sI-A)^{-1}+D$，$(sI-A)^{-1} = \frac{(sI-A)^{* }}{|sI-A|} $，其分母对应转移矩阵$A$的特征值，即传递函数极点。
+
+### 可控性 Controllability
+
+### 可稳定性 Stabilizability
+
+### 可观性 Observability
+
+### 可检测性：Detectablility
+
+
 
 
 
