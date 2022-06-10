@@ -10,7 +10,7 @@
     </script>
 </head>
 
-## 研究对象和方法
+### 研究对象和方法
 
 有限维线性时不变动态系统（a finite dimensional linear time invariant (FDLTI) dynamical system），具有齐次性、线性和时不变特性
 
@@ -29,6 +29,7 @@ $ sX(s) = A X(s) + B U(s)$
 $ Y(s) = C X(s) + D U(s)$
 
 传递函数 $ G(s) = \frac{Y(s)}{U(s)} = (C(sI-A)^{-1}+D)$
+
 
 ### 五类系统性分析
 
