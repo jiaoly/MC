@@ -30,14 +30,14 @@ $ Y(s) = C X(s) + D U(s)$
 
 传递函数 $ G(s) = \frac{Y(s)}{U(s)} = (C(sI-A)^{-1}+D)$
 
-## 五类系统性分析
+### 五类系统性分析
 
-### 稳定性 Stability
+#### 稳定性 Stability
 
 对于传递函数$G(s)=C(sI-A)^{-1}+D$，$(sI-A)^{-1} = \frac{(sI-A)^{* }}{|sI-A|} $，其分母对应转移矩阵$A$的特征值，即传递函数极点。
 对0输入系统，其稳定性判据为：**A的特征值的实部都在复平面左半平面**，对应极点对稳定性的影响。
 
-### 可控性 Controllability
+#### 可控性 Controllability
 
 可控性判据：**可控性矩阵$Co = [B\quad AB\quad A^{2}B\quad ……\quad A^{n-1}B]$满秩。** 由n阶系统的线性迭代形式推导，$  x_n = [B\quad AB\quad A^{2}B\quad … \quad A^{n-1}B] [ u_0\quad u_1\quad u_2 \quad… \quad u_{n-1}]^T $。即若使输入$u$有唯一解则转移矩阵必满秩。
 
@@ -45,11 +45,16 @@ $ Y(s) = C X(s) + D U(s)$
 rank(ctro(A, B))
 ```
 
-### 可稳定性 Stabilizability
+#### 可稳定性 Stabilizability
 
-### 可观性 Observability
+存在状态负反馈使得系统稳定，判据：**任意实部大于0的A的特征值$\lambda$，矩阵$[A-\lambda I,\;B]$行满秩。**
 
-### 可检测性：Detectablility
+#### 可观性 Observability
+
+
+
+
+#### 可检测性：Detectablility
 
 
 
