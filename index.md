@@ -10,9 +10,6 @@
     </script>
 </head>
 
-
-# 现代控制理论摘要
-
 ## 研究对象和方法
 
 有限维线性时不变动态系统（a finite dimensional linear time invariant (FDLTI) dynamical system），具有齐次性、线性和时不变特性
@@ -38,8 +35,10 @@ $ Y(s) = C X(s) + D U(s)$
 ### 稳定性 Stability
 
 对于传递函数$G(s)=C(sI-A)^{-1}+D$，$(sI-A)^{-1} = \frac{(sI-A)^{* }}{|sI-A|} $，其分母对应转移矩阵$A$的特征值，即传递函数极点。
+对0输入系统，其稳定性判据为：**A的特征值的实部都在复平面左半平面**，对应极点对稳定性的影响。
 
 ### 可控性 Controllability
+
 
 ### 可稳定性 Stabilizability
 
