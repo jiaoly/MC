@@ -40,7 +40,7 @@ $ Y(s) = C X(s) + D U(s)$
 
 #### 可控性 Controllability
 
-可控性判据：**可控性矩阵$Co = [B\quad AB\quad A^{2}B\quad ……\quad A^{n-1}B]$满秩。** 由n阶系统的线性迭代形式推导，$  x_n = [B\quad AB\quad A^{2}B\quad … \quad A^{n-1}B] [ u_0\quad u_1\quad u_2 \quad… \quad u_{n-1}]^T $。即若使输入$u$有唯一解则转移矩阵必满秩。
+可控性判据：**可控性矩阵$Co = [B\quad AB\quad A^{2}B\quad ……\quad A^{n-1}B]$行满秩。** 由n阶系统的线性迭代形式推导，$  x_n = [B\quad AB\quad A^{2}B\quad … \quad A^{n-1}B] [ u_0\quad u_1\quad u_2 \quad… \quad u_{n-1}]^T $。即若使输入$u$有唯一解则转移矩阵必满秩。
 
 ``` 
 rank(ctro(A, B))
@@ -52,10 +52,12 @@ rank(ctro(A, B))
 
 #### 可观性 Observability
 
-由于实际状态量可能不可测量，引入系统可观性，其判据为**是否可以通过系统输入和输出来得到系统的状态。** 
+由于实际状态量可能不可测量，引入系统可观性，即是否可以通过系统输入和输出来得到系统的状态。
 
-O={ [  C\\ CA\\ CA^{2}\\ ·\\ ·\\ CA^{n-1}]}
-
+其判据为**可观测矩阵$O=[  C \quad CA \quad CA^{2}\quad ···\quad CA^{n-1}]^{T}$列满秩**
+```
+rank(obsv(A, C))
+```
 
 #### 可检测性：Detectablility
 
