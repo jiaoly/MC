@@ -75,10 +75,10 @@ $$\sqrt{3x-1}+(1+x)^2$$
 ### 状态反馈稳定控制
 
 
-![img](https://github.com/jiaoly/MC/blob/gh-pages/figures/feedback_fig.png)
+![img](https://github.com/jiaoly/MC/blob/gh-pages/Figures/feedback_fig.png)
 
 
-![img](https://github.com/jiaoly/MC/blob/gh-pages/figures/state_feedback_fig.png)
+![img](https://github.com/jiaoly/MC/blob/gh-pages/Figures/state_feedback_fig.png)
 
 
 ### Markdown
