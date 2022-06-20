@@ -72,6 +72,10 @@ This sentence uses delimiters to show math inline: $\sqrt{3x-1}+(1+x)^2$
 
 $$\sqrt{3x-1}+(1+x)^2$$
 
+### 状态反馈稳定控制
+
+![img]{}
+
 
 ### Markdown
 
