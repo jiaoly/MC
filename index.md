@@ -74,7 +74,7 @@ $$\sqrt{3x-1}+(1+x)^2$$
 
 ### 状态反馈稳定控制
 
-![img]{}
+![img](https://github.com/jiaoly/MC/blob/gh-pages/feedback_fig.png)
 
 
 ### Markdown
