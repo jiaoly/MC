@@ -41,6 +41,7 @@ $ Y(s) = C X(s) + D U(s)$
 #### 可控性 Controllability
 
 可控性判据：**可控性矩阵$Co = [B\quad AB\quad A^{2}B\quad ……\quad A^{n-1}B]$行满秩。** 由n阶系统的线性迭代形式推导如下
+[B\quad AB\quad A^{2}B\quad … \quad A^{n-1}B] 
 
 $$ x_n = [B\quad AB\quad A^{2}B\quad … \quad A^{n-1}B] 
 \begin{bmatrix} 
@@ -49,7 +50,7 @@ u_1 \\
 u_2 \\ 
 ... \\ 
 u_{n-1} 
-\end{bmatrix} $$。
+\end{bmatrix} $$
 
 即若使输入$u$有唯一解则转移矩阵必满秩。
 
@@ -59,7 +60,7 @@ rank(ctro(A, B))
 
 #### 可稳定性 Stabilizability
 
-存在状态负反馈使得系统稳定，判据：**任意实部大于0的A的特征值$\lambda$，矩阵$[A-\lambda I,\;B]$行满秩。**
+存在状态负反馈使得系统稳定，判据：**任意实部大于0的A的特征值$\lambda$，矩阵$[A-\lambda I, B]$行满秩。**
 
 #### 可观性 Observability
 
@@ -82,7 +83,12 @@ rank(obsv(A, C))
 
 #### 可检测性：Detectablility
 
+根据可控性和可观性是对偶的，同理，可检测性是可稳定性的对偶概念，含义是：观测器系统是不是可稳定的。判据是：**任意实部大于0的A的特征值$\lambda$ ，矩阵
 
+$$ \begin{bmatrix} \lambda I -A \\ 
+B \end{bmatrix}$$
+
+**列满秩。
 
 ### 状态反馈稳定控制
 
@@ -99,15 +105,6 @@ $ y  =  Cx+Du $
 
 ![img](/Figures/state_feedback_fig.png)
 
-**The Cauchy-Schwarz Inequality**
-
-$$
-\begin{bmatrix}
- C\\
- CA\\
-CA^2
-\end{bmatrix}
-$$
 
 
 ### Markdown
