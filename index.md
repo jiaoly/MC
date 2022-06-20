@@ -16,17 +16,19 @@
 
 使用线型常微分方程组描述系统
 
-$ \dot{x}  = Ax+Bu $
-
-$ y  =  Cx+Du $
+$$ \begin{array}{c}
+\dot{x}  = Ax+Bu \\
+ y  =  Cx+Du 
+ \end{array}$$
 
 其中$x(t_0) = x_0 $为状态变量，$ u $表示系统输入， $y$表示系统输出。
 
 对应经典控制理论，两边取Laplace变换:
 
-$ sX(s) = A X(s) + B U(s)$
-
-$ Y(s) = C X(s) + D U(s)$
+$$ \begin{array}{c}
+sX(s) = A X(s) + B U(s)\\
+Y(s) = C X(s) + D U(s)
+\end{array}$$
 
 传递函数 $ G(s) = \frac{Y(s)}{U(s)} = (C(sI-A)^{-1}+D)$
 
@@ -83,27 +85,35 @@ rank(obsv(A, C))
 
 #### 可检测性：Detectablility
 
-根据可控性和可观性是对偶的，同理，可检测性是可稳定性的对偶概念，含义是：观测器系统是不是可稳定的。判据是：**任意实部大于0的A的特征值$\lambda$ ，矩阵
+根据可控性和可观性是对偶的，同理，可检测性是可稳定性的对偶概念，含义是：观测器系统是不是可稳定的。判据是：**任意实部大于0的A的特征值$\lambda$ ，矩阵**
 
 $$ \begin{bmatrix} \lambda I -A \\ 
 B \end{bmatrix}$$
 
-**列满秩。
+**列满秩。**
 
 ### 状态反馈稳定控制
 
 基于状态方程的系统如下，其系统输入u与状态变量$x$无关，因此不构成反馈。其状态方程
 
-$ \dot{x}  = Ax+Bu $
-
-$ y  =  Cx+Du $
-
+$$\begin{array}{c}
+\dot{x}  = Ax+Bu \\
+ y  =  Cx+Du 
+\end{array}$$
 
 ![img](/Figures/feedback_fig.png)
 
-基于状态反馈的控制系统如下，
+基于状态反馈的控制系统如下:
 
 ![img](/Figures/state_feedback_fig.png)
+
+其中$ U = Fx$，即输入为状态变量的函数，通过状态反馈实现稳定控制。确定这一线性变换F的过程也是配置极点的过程，Matlab实现如下
+
+'''
+F = -place(A, B, eig_value)
+'''
+
+在以上系统中通过输入u实现对系统的稳定控制，也即对状态变量误差的控制。对于Tracking问题则需对误差$e = {x_d} - x$进行反馈控制，其中$x_d$为期望值。为将开环平衡点放置在0点，将e替换对应状态变量。其系统如下：
 
 
 
