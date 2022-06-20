@@ -40,7 +40,18 @@ $ Y(s) = C X(s) + D U(s)$
 
 #### 可控性 Controllability
 
-可控性判据：**可控性矩阵$Co = [B\quad AB\quad A^{2}B\quad ……\quad A^{n-1}B]$行满秩。** 由n阶系统的线性迭代形式推导，$  x_n = [B\quad AB\quad A^{2}B\quad … \quad A^{n-1}B] [ u_0\quad u_1\quad u_2 \quad… \quad u_{n-1}]^T $。即若使输入$u$有唯一解则转移矩阵必满秩。
+可控性判据：**可控性矩阵$Co = [B\quad AB\quad A^{2}B\quad ……\quad A^{n-1}B]$行满秩。** 由n阶系统的线性迭代形式推导如下
+
+$$ x_n = [B\quad AB\quad A^{2}B\quad … \quad A^{n-1}B] 
+\begin{bmatrix} 
+u_0 \\ 
+u_1 \\ 
+u_2 \\ 
+... \\ 
+u_{n-1} 
+\end{bmatrix} $$。
+
+即若使输入$u$有唯一解则转移矩阵必满秩。
 
 ``` 
 rank(ctro(A, B))
