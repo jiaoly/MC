@@ -54,7 +54,17 @@ rank(ctro(A, B))
 
 由于实际状态量可能不可测量，引入系统可观性，即是否可以通过系统输入和输出来得到系统的状态。
 
-其判据为**可观测矩阵$O=[  C \quad CA \quad CA^{2}\quad ···\quad CA^{n-1}]^{T}$列满秩**
+其判据为**可观测矩阵$O$列满秩**，其中
+
+$$O = \begin{bmatrix}
+ C\\
+ CA\\
+CA^2 \\
+: \\
+CA^{n-1}
+\end{bmatrix}$$
+
+Matlab判断语句为
 ```
 rank(obsv(A, C))
 ```
@@ -80,13 +90,12 @@ $ y  =  Cx+Du $
 
 **The Cauchy-Schwarz Inequality**
 
-$$\begin{equation}
-\begin{aligned}
-\theta ^{*},\theta ^{'*}&= \argmin\limits_{\theta,\theta^{'}}\frac{1}{n}\sum_{n}^{i=1}L\left (\textbf{x}^{(i)},\textbf{x}^{'(i)}  \right )\\
-&=\argmin\limits_{\theta,\theta^{'}}\frac{1}{n}\sum_{n}^{i=1}L\left (\textbf{x}^{(i)},g_{\theta ^{'}}\left ( f_{\theta }\left ( \textbf{x}^{i}\right )\right )\right )
-\end{aligned}
-\label{f2}
-\end{equation}
+$$
+\begin{bmatrix}
+ C\\
+ CA\\
+CA^2
+\end{bmatrix}
 $$
 
 
