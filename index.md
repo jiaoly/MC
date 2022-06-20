@@ -63,26 +63,31 @@ rank(obsv(A, C))
 
 
 
-
-
-You can use the [editor on GitHub](https://github.com/jiaoly/jiao.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-This sentence uses delimiters to show math inline: $\sqrt{3x-1}+(1+x)^2$
-
-$$\sqrt{3x-1}+(1+x)^2$$
-
 ### 状态反馈稳定控制
+
+基于状态方程的系统如下，其系统输入u与状态变量$x$无关，因此不构成反馈。其状态方程
+
+$ \dot{x}  = Ax+Bu $
+
+$ y  =  Cx+Du $
 
 
 ![img](/Figures/feedback_fig.png)
 
+基于状态反馈的控制系统如下，
 
 ![img](/Figures/state_feedback_fig.png)
 
 **The Cauchy-Schwarz Inequality**
 
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+$$\begin{equation}
+\begin{aligned}
+\theta ^{*},\theta ^{'*}&= \argmin\limits_{\theta,\theta^{'}}\frac{1}{n}\sum_{n}^{i=1}L\left (\textbf{x}^{(i)},\textbf{x}^{'(i)}  \right )\\
+&=\argmin\limits_{\theta,\theta^{'}}\frac{1}{n}\sum_{n}^{i=1}L\left (\textbf{x}^{(i)},g_{\theta ^{'}}\left ( f_{\theta }\left ( \textbf{x}^{i}\right )\right )\right )
+\end{aligned}
+\label{f2}
+\end{equation}
+$$
 
 
 ### Markdown
